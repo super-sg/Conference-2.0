@@ -823,7 +823,7 @@ body.nav-locked { overflow: hidden; }
   max-width: 26ch;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: var(--sp-4);
+  margin-bottom: var(--sp-6);
   text-align: center;
 }
 .hero__acronym {

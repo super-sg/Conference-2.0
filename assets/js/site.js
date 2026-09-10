@@ -13,7 +13,7 @@
      CONFIG
      ---------------------------------------------------------------------- */
   var CONFIG = {
-    name: "International Conference on Next-Generation Computing and Innovations",
+    name: "International Conference on Next-Generation Computing and Interdisciplinary Innovations in Science, Engineering, and Health",
     acronym: "ICNGCI 2027",
     // ISO dates (YYYY-MM-DD). Local midnight is assumed.
     startDate: "2027-02-19",

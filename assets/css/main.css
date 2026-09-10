@@ -817,10 +817,10 @@ body.nav-locked { overflow: hidden; }
 }
 .hero h1 {
   color: #fff;
-  font-size: clamp(2.1rem, 5.4vw, 4.2rem);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  max-width: 28ch;
+  font-size: clamp(1.85rem, 4.2vw, 3.4rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  max-width: 36ch;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: var(--sp-4);

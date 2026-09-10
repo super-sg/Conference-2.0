@@ -2,7 +2,7 @@
 
 ## 1. Executive Summary & Project Purpose
 
-The **ICNGCI 2027** codebase is a production-grade, zero-dependency static web platform and documentation suite for the **International Conference on Next-Generation Computing and Innovations**, scheduled for **19–20 February 2027** at **Sharda University, Greater Noida, India**.
+The **ICNGCI 2027** codebase is a production-grade, zero-dependency static web platform and documentation suite for the **International Conference on Next-Generation Computing and Interdisciplinary Innovations in Science, Engineering, and Health**, scheduled for **19–20 February 2027** at **Sharda University, Greater Noida, India**.
 
 The project is engineered specifically to balance **visual prestige** (drawing design language from the MIT Department of Chemistry and modern academic publishing) with **extreme long-term maintainability** (zero build dependencies, no npm bundle step to break over multi-year conference lifecycles).
 

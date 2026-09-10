@@ -1840,7 +1840,8 @@ textarea.field { min-height: 140px; resize: vertical; }
   padding-top: 0.45rem;
 }
 
-.committee-showcase--national {
+.committee-showcase--national,
+.committee-showcase--advisory {
   background: #080f22;
   padding-bottom: 0.85rem;
 }
@@ -1998,6 +1999,10 @@ textarea.field { min-height: 140px; resize: vertical; }
 
 .story-ticker--nat {
   animation: scrollStory 85s linear infinite;
+}
+
+.story-ticker--advisory {
+  animation: scrollStory 120s linear infinite;
 }
 
 .story-ticker-wrap:hover .story-ticker {

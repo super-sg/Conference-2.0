@@ -1,7 +1,8 @@
 /* ==========================================================================
    ICNGCI 2027 — Design system
-  Roboto throughout, heavy display weights, squared geometry, warm ivory canvas,
-  generous whitespace, and a botanical teal / coral / amber accent system.
+   Visual language adapted from the MIT Department of Chemistry site:
+   Roboto throughout, heavy display weights, squared geometry, white canvas,
+   generous whitespace, saturated multi-hue accents used sparingly.
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -13,37 +14,37 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
   /* Neutrals */
-  --ink: #1f2926;
-  --ink-2: #34413c;
-  --muted: #68736e;
-  --muted-2: #8b9791;
-  --line: #d9e2dc;
-  --line-strong: #bdcdc3;
-  --surface: #fbfaf5;
-  --surface-2: #eef3ee;
-  --surface-3: #e1ebe4;
-  --inverse: #17332e;
+  --ink: #0a0a0a;
+  --ink-2: #2e2e2e;
+  --muted: #616161;
+  --muted-2: #8a8a8a;
+  --line: #e3e3e3;
+  --line-strong: #c9c9c9;
+  --surface: #ffffff;
+  --surface-2: #f4f4f4;
+  --surface-3: #ebebeb;
+  --inverse: #0a0a0a;
 
-  /* Accents: botanical teal, coral, berry, slate, amber, and mint */
-  --blue: #176b67;
-  --blue-bright: #2b9c91;
-  --violet: #385a71;
-  --red: #d85c45;
-  --magenta: #b65c78;
-  --orange: #c8793c;
-  --cyan: #9fe0d0;
-  --gold: #e3b34b;
+  /* Accents (MIT-Chemistry-style saturated palette) */
+  --blue: #003bce;
+  --blue-bright: #008bff;
+  --violet: #2b00aa;
+  --red: #ff2b37;
+  --magenta: #d41e85;
+  --orange: #d1600a;
+  --cyan: #4ed5fd;
+  --gold: #ffcd00;
 
   --primary: var(--blue);
   --accent: var(--red);
 
   /* Track colour coding */
-  --t1: #176b67;
-  --t2: #b65c78;
-  --t3: #d85c45;
-  --t4: #2b9c91;
-  --t5: #385a71;
-  --t6: #c8793c;
+  --t1: #003bce;
+  --t2: #d41e85;
+  --t3: #ff2b37;
+  --t4: #008bff;
+  --t5: #2b00aa;
+  --t6: #d1600a;
 
   /* Layout */
   --wrap: 1240px;
@@ -701,7 +702,7 @@ body.nav-locked { overflow: hidden; }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--gold);
+  background: var(--gold, #ffcd00);
   color: #0a0a0a;
   font-weight: 900;
   font-size: 0.825rem;
@@ -819,12 +820,12 @@ body.nav-locked { overflow: hidden; }
 .hero {
   position: relative;
   color: #fff;
-  background-color: #17332e;
+  background-color: #061436;
   background-image:
-    linear-gradient(105deg, rgba(23, 51, 46, 0.96) 0%, rgba(23, 51, 46, 0.88) 45%, rgba(23, 51, 46, 0.72) 100%),
-    radial-gradient(1100px 520px at 15% 0%, rgba(43, 156, 145, 0.5), transparent 60%),
-    radial-gradient(900px 480px at 88% 25%, rgba(182, 92, 120, 0.42), transparent 62%),
-    radial-gradient(700px 400px at 55% 100%, rgba(56, 90, 113, 0.55), transparent 65%),
+    linear-gradient(105deg, rgba(4, 12, 33, 0.96) 0%, rgba(4, 12, 33, 0.88) 45%, rgba(4, 12, 33, 0.72) 100%),
+    radial-gradient(1100px 520px at 15% 0%, rgba(0, 139, 255, 0.5), transparent 60%),
+    radial-gradient(900px 480px at 88% 25%, rgba(212, 30, 133, 0.42), transparent 62%),
+    radial-gradient(700px 400px at 55% 100%, rgba(43, 0, 170, 0.55), transparent 65%),
     url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
@@ -891,7 +892,7 @@ body.nav-locked { overflow: hidden; }
 .hero__tag {
   font-size: clamp(1.05rem, 1.9vw, 1.3rem);
   line-height: 1.5;
-  color: #dcebe4;
+  color: #dfe6f5;
   max-width: 76ch;
   margin-left: auto;
   margin-right: auto;
@@ -982,21 +983,21 @@ body.nav-locked { overflow: hidden; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(760px 340px at 12% 0%, rgba(43, 156, 145, 0.75), transparent 62%),
-    radial-gradient(620px 320px at 90% 100%, rgba(182, 92, 120, 0.5), transparent 64%);
+    radial-gradient(760px 340px at 12% 0%, rgba(0, 59, 206, 0.75), transparent 62%),
+    radial-gradient(620px 320px at 90% 100%, rgba(212, 30, 133, 0.5), transparent 64%);
 }
 .pagehead__inner { position: relative; z-index: 2; padding-block: clamp(2.5rem, 6vw, 4.5rem); }
 .pagehead h1 { color: #fff; margin-bottom: var(--sp-3); }
-.pagehead p { color: #dcebe4; max-width: 62ch; margin: 0; }
+.pagehead p { color: #d7dced; max-width: 62ch; margin: 0; }
 .pagehead .eyebrow { color: var(--cyan); }
 
 .breadcrumb {
   font-size: 0.8125rem;
-  color: #b3c8be;
+  color: #a8b2cc;
   margin: 0 0 var(--sp-5);
   max-width: none;
 }
-.breadcrumb a { color: #cfe1d8; text-decoration: none; }
+.breadcrumb a { color: #cfd6e8; text-decoration: none; }
 .breadcrumb a:hover { color: #fff; text-decoration: underline; }
 .breadcrumb span { opacity: 0.5; margin-inline: 0.4rem; }
 
@@ -1796,7 +1797,7 @@ textarea.field { min-height: 140px; resize: vertical; }
   padding-block: clamp(2.25rem, 5vw, 3.5rem);
 }
 .cta-band h2 { color: #fff; margin-bottom: 0.5rem; }
-.cta-band p { color: #dcebe4; margin: 0; }
+.cta-band p { color: #dce7ff; margin: 0; }
 
 /* --------------------------------------------------------------------------
    26. Footer
@@ -1888,13 +1889,13 @@ textarea.field { min-height: 140px; resize: vertical; }
 }
 
 .committee-showcase--speakers {
-  background: #1c3b35;
+  background: #040914;
   padding-top: 0.45rem;
 }
 
 .committee-showcase--national,
 .committee-showcase--advisory {
-  background: #21453e;
+  background: #080f22;
   padding-bottom: 0.85rem;
 }
 
@@ -1911,7 +1912,7 @@ textarea.field { min-height: 140px; resize: vertical; }
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: #ffcd00;
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
@@ -1924,8 +1925,8 @@ textarea.field { min-height: 140px; resize: vertical; }
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--gold);
-  box-shadow: 0 0 8px var(--gold);
+  background: #ffcd00;
+  box-shadow: 0 0 8px #ffcd00;
 }
 
 .carousel-mini-head__line {
@@ -2075,7 +2076,7 @@ textarea.field { min-height: 140px; resize: vertical; }
   position: relative;
   border-radius: 0;
   overflow: hidden;
-  background: #1c3b35;
+  background: #091122;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-right: none;
   box-shadow: none;
@@ -2092,7 +2093,7 @@ textarea.field { min-height: 140px; resize: vertical; }
 .story-card:hover {
   transform: translateY(-3px);
   z-index: 5;
-  border-color: var(--blue-bright);
+  border-color: #008bff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
@@ -2101,7 +2102,7 @@ textarea.field { min-height: 140px; resize: vertical; }
   width: 100%;
   height: 145px;
   overflow: hidden;
-  background: #17332e;
+  background: #040915;
 }
 
 .story-card__photo-frame::after {
@@ -2225,8 +2226,8 @@ textarea.field { min-height: 140px; resize: vertical; }
 .story-card__badge--text {
   font-size: 0.6rem;
   font-weight: 800;
-  color: var(--gold) !important;
-  border-color: rgba(227, 179, 75, 0.4) !important;
+  color: #ffcd00 !important;
+  border-color: rgba(255, 205, 0, 0.4) !important;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 0.18rem 0.45rem;

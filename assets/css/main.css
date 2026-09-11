@@ -377,10 +377,10 @@ code {
   flex-shrink: 0;
 }
 .hostmark img {
-  height: 27px;
+  height: 38px;
   width: auto;
   background: #fff;
-  padding: 3px 7px;
+  padding: 4px 9px;
   flex-shrink: 0;
 }
 .hostmark__dept {
@@ -399,7 +399,8 @@ code {
   margin: 0;
   max-width: none;
   color: #9d9d9d;
-  text-align: center;
+  text-align: left;
+  margin-left: -0.5rem;
 }
 .topbar__meta strong { color: #fff; letter-spacing: 0.05em; }
 .topbar .dot { margin-inline: 0.55rem; opacity: 0.4; }
@@ -415,7 +416,7 @@ code {
   color: #8a8a8a;
   white-space: nowrap;
 }
-.topbar__pub img { height: 19px; width: auto; background: #fff; padding: 3px 7px; }
+.topbar__pub img { height: 46px; width: auto; background: #fff; padding: 5px 12px; }
 
 .topbar__links { display: flex; flex-wrap: wrap; gap: 1.15rem; }
 .topbar__links a { color: #c7c7c7; text-decoration: none; font-weight: 500; }

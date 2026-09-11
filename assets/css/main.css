@@ -377,10 +377,10 @@ code {
   flex-shrink: 0;
 }
 .hostmark img {
-  height: 38px;
+  height: 30px;
   width: auto;
   background: #fff;
-  padding: 4px 9px;
+  padding: 3px 8px;
   flex-shrink: 0;
 }
 .hostmark__dept {
@@ -416,7 +416,7 @@ code {
   color: #8a8a8a;
   white-space: nowrap;
 }
-.topbar__pub img { height: 46px; width: auto; background: #fff; padding: 5px 12px; }
+.topbar__pub img { height: 30px; width: auto; background: #fff; padding: 3px 8px; }
 
 .topbar__links { display: flex; flex-wrap: wrap; gap: 1.15rem; }
 .topbar__links a { color: #c7c7c7; text-decoration: none; font-weight: 500; }

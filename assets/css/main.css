@@ -25,26 +25,41 @@
   --surface-3: #ebebeb;
   --inverse: #0a0a0a;
 
-  /* Accents (MIT-Chemistry-style saturated palette) */
-  --blue: #003bce;
-  --blue-bright: #008bff;
-  --violet: #2b00aa;
-  --red: #ff2b37;
-  --magenta: #d41e85;
-  --orange: #d1600a;
-  --cyan: #4ed5fd;
-  --gold: #ffcd00;
+  /* New palette: lavender steel + coral rush + blossom vapor */
+  --lavender-steel: #7f7fb3;
+  --lavender-steel-deep: #5d5d8a;
+  --coral-rush: #f47f6a;
+  --coral-rush-deep: #dc5d46;
+  --blossom-vapor: #f9dfe9;
+  --blush-soft: #f7eaf6;
+  --steel-ink: #2f3345;
+  --steel-muted: #5d6478;
+  --mist: #f6f4fb;
+  --white: #ffffff;
 
-  --primary: var(--blue);
-  --accent: var(--red);
+  --blue: var(--lavender-steel);
+  --blue-bright: #a39ad8;
+  --violet: var(--lavender-steel-deep);
+  --red: var(--coral-rush);
+  --magenta: #d58db4;
+  --orange: var(--coral-rush-deep);
+  --cyan: #d9d2f5;
+  --gold: var(--blossom-vapor);
+
+  --primary: var(--lavender-steel);
+  --primary-deep: var(--lavender-steel-deep);
+  --accent: var(--coral-rush);
+  --accent-deep: var(--coral-rush-deep);
+  --soft-accent: var(--blossom-vapor);
+  --soft-surface: var(--blush-soft);
 
   /* Track colour coding */
-  --t1: #003bce;
-  --t2: #d41e85;
-  --t3: #ff2b37;
-  --t4: #008bff;
-  --t5: #2b00aa;
-  --t6: #d1600a;
+  --t1: #7f7fb3;
+  --t2: #d98bb4;
+  --t3: #f47f6a;
+  --t4: #b9a9df;
+  --t5: #e8c2d8;
+  --t6: #f5a7a1;
 
   /* Layout */
   --wrap: 1240px;
@@ -678,7 +693,7 @@ body.nav-locked { overflow: hidden; }
    8. Rotating Flags Banner (International Participating Countries)
    -------------------------------------------------------------------------- */
 .flags-banner {
-  background: rgba(3, 10, 26, 0.75);
+  background: rgba(47, 51, 69, 0.82);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   color: #fff;
@@ -688,7 +703,7 @@ body.nav-locked { overflow: hidden; }
   position: relative;
   z-index: 10;
   font-size: 0.95rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .flags-banner__inner {
@@ -702,15 +717,15 @@ body.nav-locked { overflow: hidden; }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--gold, #ffcd00);
-  color: #0a0a0a;
+  background: var(--blossom-vapor);
+  color: var(--steel-ink);
   font-weight: 900;
   font-size: 0.825rem;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   padding: 0.55rem 1.1rem;
   border-radius: 6px;
-  box-shadow: 0 4px 14px rgba(255, 205, 0, 0.4);
+  box-shadow: 0 4px 14px rgba(244, 127, 106, 0.24);
   white-space: nowrap;
 }
 
@@ -1883,19 +1898,19 @@ textarea.field { min-height: 140px; resize: vertical; }
 /* ==================== END-TO-END COMMITTEE CAROUSEL ==================== */
 .committee-showcase {
   position: relative;
-  background: #060b17;
+  background: #1a1d2f;
   padding: 0.25rem 0;
   overflow: hidden;
 }
 
 .committee-showcase--speakers {
-  background: #040914;
+  background: #171b2d;
   padding-top: 0.45rem;
 }
 
 .committee-showcase--national,
 .committee-showcase--advisory {
-  background: #080f22;
+  background: #1d2238;
   padding-bottom: 0.85rem;
 }
 
@@ -1912,7 +1927,7 @@ textarea.field { min-height: 140px; resize: vertical; }
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #ffcd00;
+  color: var(--blossom-vapor);
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
@@ -1925,8 +1940,8 @@ textarea.field { min-height: 140px; resize: vertical; }
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #ffcd00;
-  box-shadow: 0 0 8px #ffcd00;
+  background: var(--coral-rush);
+  box-shadow: 0 0 8px var(--coral-rush);
 }
 
 .carousel-mini-head__line {
@@ -2093,8 +2108,8 @@ textarea.field { min-height: 140px; resize: vertical; }
 .story-card:hover {
   transform: translateY(-3px);
   z-index: 5;
-  border-color: #008bff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border-color: var(--lavender-steel);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
 .story-card__photo-frame {
